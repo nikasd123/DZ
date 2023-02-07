@@ -91,18 +91,61 @@ public class Main {
         int num1 = 3;
         int num2 = 5;
         int num3 = -1;
+        int plusCount = 0;
 
-
+        if (num1 >= 0) {
+            plusCount++;
+        }
+        if (num2 >= 0) {
+            plusCount++;
+        }
+        if (num3 >= 0) {
+            plusCount++;
+        }
+        System.out.printf("Всего %d положительных числа", plusCount);
+        System.out.println();
     }
 
     static void Task_5() {
 //        5) Даны 3 целых числа. Найти количество положительных и отрицательных
 //        чисел в исходном наборе.
+        int num1 = 3;
+        int num2 = 5;
+        int num3 = -1;
+        int plusCount = 0;
+        int minusCount = 0;
+
+        if (num1 >= 0) {
+            plusCount++;
+        } else {
+            minusCount++;
+        }
+        if (num2 >= 0) {
+            plusCount++;
+        } else {
+            minusCount++;
+        }
+        if (num3 >= 0) {
+            plusCount++;
+        } else {
+            minusCount++;
+        }
+        System.out.printf("Всего %d положительных числа", plusCount);
+        System.out.println();
+        System.out.printf("И %d отрицательных чисел", minusCount);
+        System.out.println();
     }
 
     static void Task_6() {
 //        6) Даны 2 числа. Вывести большее из них
+        int num1 = 9;
+        int num2 = 21;
 
+        if (num1 > num2) {
+            System.out.println(num1);
+        } else {
+            System.out.println(num2);
+        }
     }
 
     static void Task_7() {
@@ -113,6 +156,7 @@ public class Main {
 //            1 программиста
 //            10 программистов
 //            и т.д
+
 
     }
 }
