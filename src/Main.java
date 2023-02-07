@@ -1,11 +1,19 @@
 public class Main {
     public static void main(String[] args) {
         Task_1();
+        System.out.println();
         Task_2();
+        System.out.println();
         Task_3();
+        System.out.println();
         Task_4();
+        System.out.println();
+        System.out.println();
         Task_5();
+        System.out.println();
+        System.out.println();
         Task_6();
+        System.out.println();
         Task_7();
     }
 
@@ -26,7 +34,6 @@ public class Main {
         } else {
             System.out.println("Число отрицательное");
         }
-        System.out.println();
     }
 
     static void Task_2() {
@@ -59,7 +66,6 @@ public class Main {
         } else {
             System.out.println("По проверке суммы сторон АВ к С - такой треугольник не может существовать");
         }
-        System.out.println();
 //        Пытался сначала сделать одним блоков if\else if\else но выбирался 1 из истины. В итоге
 //        всегда писало "такой треугольник может существовать". Я уверен есть менее колхозный
 //        вариант кода, хотел бы увидеть разбор, либо пример других.
@@ -82,7 +88,6 @@ public class Main {
             num = 10;
             System.out.println(num);
         }
-        System.out.println();
     }
 
     static void Task_4() {
@@ -103,7 +108,6 @@ public class Main {
             plusCount++;
         }
         System.out.printf("Всего %d положительных числа", plusCount);
-        System.out.println();
     }
 
     static void Task_5() {
@@ -133,7 +137,6 @@ public class Main {
         System.out.printf("Всего %d положительных числа", plusCount);
         System.out.println();
         System.out.printf("И %d отрицательных чисел", minusCount);
-        System.out.println();
     }
 
     static void Task_6() {
@@ -146,7 +149,6 @@ public class Main {
         } else {
             System.out.println(num2);
         }
-        System.out.println();
     }
 
     static void Task_7() {
