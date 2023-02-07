@@ -40,9 +40,9 @@ public class Main {
         int sideB = 9;
         int sideC = 23;
 
-        int sumAB = sideA + sideB;
-        int sumBC = sideC + sideB;
-        int sumAC = sideC + sideA;
+        int sumAB = sideA + sideB; //сумма сторон АВ
+        int sumBC = sideC + sideB; //сумма сторон ВС
+        int sumAC = sideC + sideA; //сумма сторон АС
 
         if (sumAC > sideB) {
             System.out.println("По проверке суммы сторон АС к В - такой треугольник существует");
@@ -91,7 +91,7 @@ public class Main {
         int num1 = 3;
         int num2 = 5;
         int num3 = -1;
-        int plusCount = 0;
+        int plusCount = 0; // кол-во положительных чисел
 
         if (num1 >= 0) {
             plusCount++;
@@ -112,8 +112,8 @@ public class Main {
         int num1 = 3;
         int num2 = 5;
         int num3 = -1;
-        int plusCount = 0;
-        int minusCount = 0;
+        int plusCount = 0; // количество положительных чисел
+        int minusCount = 0; // количество отрицательных чисел
 
         if (num1 >= 0) {
             plusCount++;
@@ -146,6 +146,7 @@ public class Main {
         } else {
             System.out.println(num2);
         }
+        System.out.println();
     }
 
     static void Task_7() {
@@ -157,6 +158,12 @@ public class Main {
 //            10 программистов
 //            и т.д
 
+        int programmerCount = 3; // Count of programmers
 
+        if (programmerCount >= 5) {
+            System.out.printf("%d программистов", programmerCount);
+        } else {
+            System.out.printf("%d программиста", programmerCount); // условие на менее пяти программистов
+        }
     }
 }
