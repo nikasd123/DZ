@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-//        Task_1();
-//        Task_2();
+        Task_1();
+        Task_2();
         Task_3();
         Task_4();
     }
