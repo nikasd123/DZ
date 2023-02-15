@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Task_1();
-        Task_2();
+//        Task_1();
+//        Task_2();
         Task_3();
         Task_4();
     }
@@ -19,6 +19,7 @@ public class Main {
 
         System.out.print("Input random number from 0 to 10: ");
         int checkNumber = importCheckNum.nextInt();
+        Arrays.sort(numbers);
 
         if (Arrays.binarySearch(numbers, checkNumber) >= 0) {
             System.out.println(checkNumber + " is in array");
@@ -47,7 +48,7 @@ public class Main {
         if (Arrays.binarySearch(numbers, deleteNumber) < 0){
             System.out.println("This number does`n exist in array");
         } else {
-            int[] numbersNew = new int[numbers.length];
+            int[] numbersNew = new int[numbers.length-1];
             for (int i = 0; i < numbers.length; i++){
                 if (numbers[i] != deleteNumber) {
                     numbersNew[i] =  numbers[i];
@@ -70,6 +71,7 @@ public class Main {
         Scanner amountOfArray = new Scanner(System.in);
         System.out.print("Type amount of array: ");
         int[] numbers = new int[amountOfArray.nextInt()];
+        int summa = 0;
 
         for (int index = 0; index < numbers.length; index++) {
             numbers[index] = new Random().nextInt(100);
@@ -77,15 +79,23 @@ public class Main {
         System.out.print("Our array is ");
         System.out.print((Arrays.toString(numbers)));
 
+        Arrays.sort(numbers);
         System.out.println();
 
-        double max = Arrays.stream(numbers).max().getAsInt();
-        double min = Arrays.stream(numbers).min().getAsInt();
-        double avg = Arrays.stream(numbers).average().getAsDouble();
-
-        System.out.println(min + " is minimum number of array");
-        System.out.println(max + " is maximum number of array");
-        System.out.println(avg + " is average number of array");
+        for (int i = 0; i < numbers.length; i++) {
+            summa += numbers[i];
+        }
+        double averageNum = summa / numbers.length;
+        System.out.println("Minimum num is " + numbers[0]);
+        System.out.println("Average number is " + averageNum);
+        System.out.println("Maximum number is " + numbers[numbers.length-1]);
+//        double max = Arrays.stream(numbers).max().getAsInt();
+//        double min = Arrays.stream(numbers).min().getAsInt();
+//        double avg = Arrays.stream(numbers).average().getAsDouble();
+//
+//        System.out.println(min + " is minimum number of array");
+//        System.out.println(max + " is maximum number of array");
+//        System.out.println(avg + " is average number of array");
     }
 
 
