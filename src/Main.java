@@ -4,8 +4,8 @@ import java.util.Random;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-//            twoDimArrayPlusValue();
-        chessBoard();
+            twoDimArrayPlusValue();
+            chessBoardBW();
         }
 
 //    1. Создать двухмерный массив из целых чисел.
@@ -51,13 +51,16 @@ public class Main {
 //    B W B W B W B W
 //    W B W B W B W B
 //    B W B W B W B W
-        static void chessBoard(){ // не знаю как это сделать.
-        String[][] chessBoardWhite = new String[8][8];
-        String[][] chessBoardBlack = new String[8][8];
-        String blackCell = "B";
-        String whiteCell = "W";
-//        String cell;
+        static void chessBoardBW(){
+        char[][] chessBoard = new char[8][8];
+        char[] cells = {'B', 'W'};
 
-
+        for (int i = 0, symbolCounter = 0; i < chessBoard.length; i++){
+            for (int j = 0; j < chessBoard[i].length; j++){
+                chessBoard[i][j] = cells[symbolCounter];
+                symbolCounter = (symbolCounter == 0) ? ++symbolCounter : --symbolCounter;
+            }
+        }
+        System.out.print(Arrays.deepToString(chessBoard));
     }
 }
