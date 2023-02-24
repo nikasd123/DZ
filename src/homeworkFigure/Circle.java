@@ -1,6 +1,4 @@
-package homework7;
-
-import java.io.*;
+package homeworkFigure;
 
 public class Circle extends Figures{
     private double radius;

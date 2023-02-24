@@ -1,4 +1,4 @@
-package homework7;
+package homeworkFigure;
 
 public class Triangle extends Figures {
     private double sideA;
