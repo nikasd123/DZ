@@ -49,7 +49,8 @@ public class Main {
                 if (password.equals(confirmPassword)) {
                     System.out.println("You have successfully completed authorization");
                     break;
-                } else throw new WrongConfirmException();
+                } else
+                    throw new WrongConfirmException();
             } else {
                 System.err.println("Password should to have at least one number!");
                 throw new WrongPasswordException();
